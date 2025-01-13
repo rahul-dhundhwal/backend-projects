@@ -21,4 +21,4 @@ const blogPostModel = new Schema(
   }
 );
 
-export const blogPost=mongoose.model("blogPost",blogPostModel);
+export const BlogPost=mongoose.model("BlogPost",blogPostModel);

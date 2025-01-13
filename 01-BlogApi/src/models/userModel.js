@@ -24,4 +24,4 @@ const userSchema=new Schema ({
     timestamps:true
 })
 
-export const user=mongoose.model("user",userSchema);   //users is the name of the collection in the database
+export const User=mongoose.model("User",userSchema);   //users is the name of the collection in the database
