@@ -1,6 +1,6 @@
-# 20 Backend Projects in January 2025
+# 20 Backend Projects in January-February 2025
 
-Welcome to my personal initiative to create 20 backend projects in January 2025! This challenge is designed to push my limits, enhance my backend development skills, and build a diverse portfolio of projects.
+Welcome to my personal initiative to create 20 backend projects! This challenge is designed to push my limits, enhance my backend development skills, and build a diverse portfolio of projects.
 
 ## Goals
 
@@ -32,7 +32,7 @@ Welcome to my personal initiative to create 20 backend projects in January 2025!
 19. **Project 19**: 
 20. **Project 20**: 
 
-## Technologies
+## Technologies (Also Update this with Projects)
 
 - **Languages**: JavaScript
 - **Frameworks**: Node.js, Express.js
@@ -47,6 +47,6 @@ I will be documenting my progress on this journey through blog posts and GitHub 
 
 If you have any questions or suggestions, feel free to reach out to me on [GitHub](https://github.com/rahul-dhundhwal/).
 
-Let's make January 2025 a month of learning and growth!
+Let's make 2025 a year of learning and growth!
 
 Happy Coding!
