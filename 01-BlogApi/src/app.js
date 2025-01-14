@@ -12,11 +12,15 @@ import ratelimiter from './middlewares/rateLimiterMiddleware.js';
 
 
 const app = express();
-
+// Swagger API documentation
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
+//middlewares
 app.use(express.json());
 app.use(cookieParser());
 app.use(ratelimiter);
 
+
+//routes
 app.use('/api/auth', authRoutes);
 app.use('/api/blogs', blogRoutes);
 app.use('/api/comments', commentRoutes);
