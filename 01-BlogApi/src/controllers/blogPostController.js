@@ -1,18 +1,28 @@
 import {BlogPost} from '../models/BlogPostModel.js';
+import {upload} from '../utils/multerConfig.js';
 
 const createPost =async(req,res)=>{
-    try{
-        const {title,content}=req.body;
-        const post = new BlogPost({
-            title,
-            content,
-            author:req.user._id
-        });
-        await post.save();
-        res.status(201).json({message:"Post created successfully"});
-    }catch(error){
-        res.status(500).json({message:"Internal server error"});
+    upload(req,res,async(err)=>{
+        if(err){
+            res.status(400).json({message:err});
+        }
+    else{
+        try {
+            const {title,content}=req.body;
+            const newPost = new BlogPost({
+                title,
+                content,
+                author:req.user._id,
+                image:req.file?req.file.path:""
+            });
+            await newPost.save();
+            res.status(201).json({message:"Post created successfully"});
+        } catch (error) {
+            res.status(500).json({message:"Internal server error"});
+        }
     }
+});
+   
 }
 
 const getPosts = async(req,res)=>{
